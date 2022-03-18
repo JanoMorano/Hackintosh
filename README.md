@@ -4,7 +4,7 @@
 * CPU: Intel Core i9-10850k
 * GPU: AMD ASUS STRIX RX 5700XT
 * Motherboard: **MSI MPG Z490 Gaming Plus**
-                 Audio: Realtek® ALCS1200-VD1
+                 Audio: Realtek® ALC1200-VD1
                  Ethernet: Realtek® RTL8125B-CG 2.5G LAN Controller
 * RAM: 4x GSkill DDR4 8Gb 4133MHz 
 * WIFI/BT: Fenvi T919
