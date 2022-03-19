@@ -58,9 +58,17 @@
 				<key>Comment</key>
 				<string>USB Port Mapping</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Path</key>
 				<string>SSDT-UIAC.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>ThunderBolt 3</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-TB3HP.aml</string>
 			</dict>
 		</array>
 		<key>Delete</key>
@@ -276,6 +284,24 @@
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>BundlePath</key>
+				<string>USBMap.kext</string>
+				<key>Comment</key>
+				<string>USBMap</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>BundlePath</key>
 				<string>SMCProcessor.kext</string>
 				<key>Comment</key>
 				<string>Enables CPU power and temperature sensors</string>
@@ -308,6 +334,24 @@
 				<key>MinKernel</key>
 				<string></string>
 			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>BundlePath</key>
+				<string>USBWakeFixup.kext</string>
+				<key>Comment</key>
+				<string>USBWakeFixup</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/USBWakeFixup</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
 		</array>
 		<key>Block</key>
 		<array>
@@ -324,8 +368,6 @@
 				<string></string>
 				<key>MinKernel</key>
 				<string></string>
-				<key>Strategy</key>
-				<string>Disable</string>
 			</dict>
 		</array>
 		<key>Emulate</key>
@@ -511,36 +553,6 @@
 				<string></string>
 				<key>Replace</key>
 				<data>MfaKD4TJdQT/xrEKZrr9A+yoIHT7Zrr4A4jI7kj/x4X2dN/D</data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>x86_64</string>
-				<key>Base</key>
-				<string>_disable_serial_output</string>
-				<key>Comment</key>
-				<string>Enable early serial output on RELEASE kernel</string>
-				<key>Count</key>
-				<integer>1</integer>
-				<key>Enabled</key>
-				<false/>
-				<key>Find</key>
-				<data></data>
-				<key>Identifier</key>
-				<string>kernel</string>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data></data>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>Replace</key>
-				<data>AA==</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -847,46 +859,6 @@
 				<string>UEFI Shell</string>
 				<key>Path</key>
 				<string>OpenShell.efi</string>
-				<key>RealPath</key>
-				<false/>
-				<key>TextMode</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>Arguments</key>
-				<string></string>
-				<key>Auxiliary</key>
-				<true/>
-				<key>Comment</key>
-				<string>Memory testing utility</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Flavour</key>
-				<string>MemTest</string>
-				<key>Name</key>
-				<string>memtest86</string>
-				<key>Path</key>
-				<string>memtest86/BOOTX64.efi</string>
-				<key>RealPath</key>
-				<true/>
-				<key>TextMode</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>Arguments</key>
-				<string>Shutdown</string>
-				<key>Auxiliary</key>
-				<true/>
-				<key>Comment</key>
-				<string>Perform shutdown</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Flavour</key>
-				<string>Auto</string>
-				<key>Name</key>
-				<string>Shutdown</string>
-				<key>Path</key>
-				<string>ResetSystem.efi</string>
 				<key>RealPath</key>
 				<false/>
 				<key>TextMode</key>
@@ -1280,32 +1252,7 @@
 			<false/>
 		</dict>
 		<key>ReservedMemory</key>
-		<array>
-			<dict>
-				<key>Address</key>
-				<integer>268435456</integer>
-				<key>Comment</key>
-				<string>HD3000: IGPU memory corruption errata</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Size</key>
-				<integer>268435456</integer>
-				<key>Type</key>
-				<string>Reserved</string>
-			</dict>
-			<dict>
-				<key>Address</key>
-				<integer>569344</integer>
-				<key>Comment</key>
-				<string>Fix black screen on wake from hibernation for Lenovo Thinkpad T490</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Size</key>
-				<integer>4096</integer>
-				<key>Type</key>
-				<string>RuntimeCode</string>
-			</dict>
-		</array>
+		<array/>
 	</dict>
 </dict>
 </plist>
