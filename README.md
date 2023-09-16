@@ -12,7 +12,7 @@
 * NVME: Samsung 970 EVO - Windows
 
 # Version:
-* OpenCore: 0.7.9
+* OpenCore: 0.9.5
 
 OpenCore setup was made according to https://dortania.github.io/OpenCore-Install-Guide/
 
