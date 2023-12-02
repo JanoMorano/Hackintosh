@@ -13,8 +13,15 @@
 
 # Version:
 * OpenCore: 0.9.6
-** Drivers: HfsPlus, OpenCanopy, OpenRuntime
-** Kexts: AppleALC (1.8.7), Lilu (1.6.7), LucyRTL8125Ethernet (1.1.0), NVMeFix (1.1.1), RadeonSensor (1.3.0), SMCRadeonGPU (1.3.0), SMCProcesor|SMCSuperIO|VirtualSMC (1.3.2), WhateverGreen (1.6.6)
+-  Drivers: HfsPlus, OpenCanopy, OpenRuntime
+-  Kexts: AppleALC (1.8.7),
+-  Lilu (1.6.7),
+-  LucyRTL8125Ethernet (1.1.0),
+-  NVMeFix (1.1.1),
+-  RadeonSensor (1.3.0),
+-  SMCRadeonGPU (1.3.0),
+-  SMCProcesor|SMCSuperIO|VirtualSMC (1.3.2),
+-  WhateverGreen (1.6.6)
 
 OpenCore setup was made according to https://dortania.github.io/OpenCore-Install-Guide/
 
