@@ -12,7 +12,9 @@
 * NVME: Samsung 970 EVO - Windows
 
 # Version:
-* OpenCore: 0.9.5
+* OpenCore: 0.9.6
+** Drivers: HfsPlus, OpenCanopy, OpenRuntime
+** Kexts: AppleALC (1.8.7), Lilu (1.6.7), LucyRTL8125Ethernet (1.1.0), NVMeFix (1.1.1), RadeonSensor (1.3.0), SMCRadeonGPU (1.3.0), SMCProcesor|SMCSuperIO|VirtualSMC (1.3.2), WhateverGreen (1.6.6)
 
 OpenCore setup was made according to https://dortania.github.io/OpenCore-Install-Guide/
 
@@ -21,8 +23,10 @@ OpenCore setup was made according to https://dortania.github.io/OpenCore-Install
 - [x] Audio (Layout-id=7) - modified AppleALC plist due to issue with sound after booting from Windows
 - [x] Ethernet
 - [x] CPU power management
-- [x] USB ports - Still In progress
-- [x] GPU Power Monterey 12.3 fix RX5700XT -> W5700X (GeekBench5 OpenCL from 48368->74204)
+- [x] USB ports
+
+GeekBench6 CPU Singe 1698, Multi 10113
+GeekBench6 GPU Metal 102678
 
 # SMBIOS:
 iMac20,2
