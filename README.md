@@ -1,6 +1,6 @@
 # Hackintosh OpenCore MSI MPG Z490 Gaming Plus + dGPU
 
-# Specifications:
+**# Specifications:**
 * CPU: Intel Core i9-10850k
 * GPU: AMD ASUS STRIX RX 5700XT (aka W5700X)
 * Motherboard: **MSI MPG Z490 Gaming Plus**
@@ -11,7 +11,7 @@
 * NVME: ADATA SX8200NP - MacOS
 * NVME: Samsung 970 EVO - Windows
 
-# Version:
+**# Versions:**
 * OpenCore: 0.9.6
 -  Drivers: HfsPlus, OpenCanopy, OpenRuntime
 -  Kexts: AppleALC (1.8.7),
@@ -25,15 +25,15 @@
 
 OpenCore setup was made according to https://dortania.github.io/OpenCore-Install-Guide/
 
-# Working:
+**# Working:**
 - [x] Intel UHD Graphics 630
 - [x] Audio (Layout-id=7) - modified AppleALC plist due to issue with sound after booting from Windows
 - [x] Ethernet
 - [x] CPU power management
 - [x] USB ports
 
-GeekBench6 CPU Singe 1698, Multi 10113
-GeekBench6 GPU Metal 102678
+- **GeekBench6** CPU Singe 1698, Multi 10113
+- **GeekBench6** GPU Metal 102678
 
 # SMBIOS:
 iMac20,2
